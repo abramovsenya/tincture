@@ -1,0 +1,36 @@
+.container {
+}
+
+.header {
+	position: fixed;
+	background-color: $header-color;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 14px 20px;
+
+	&__nav {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo {
+	}
+	&__menu {
+		list-style: none;
+		display: flex;
+		column-gap: 27px;
+		&-button {
+			@include button($secondary-color, $bg-color, 7px 16px);
+		}
+		&-item,
+		&-link {
+			color: $primary-color;
+			text-decoration: none;
+			font-weight: 500;
+			&_orange {
+				color: $secondary-color;
+			}
+		}
+	}
+}
