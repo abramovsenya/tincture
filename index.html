@@ -13,10 +13,8 @@
 						><img src="./src/assets/icons/headerlogo.svg" alt="logo"
 					/></a>
 					<ul class="header__menu">
-						<li class="header__menu-button">
-							<a class="header__menu-link header__menu-link_orange" href="#"
-								>+7 (915)-386-56-28</a
-							>
+						<li class="header__menu-button header__menu-link_orange">
+							<a class="header__menu-link" href="#">+7 (915)-386-56-28</a>
 						</li>
 						<li class="header__menu-button">
 							<a href="#"
@@ -30,7 +28,7 @@
 							<a href="#"><img src="./src/assets/icons/vk.svg" alt="icon" /></a>
 						</li>
 					</ul>
-					<ul class="header__menu">
+					<ul class="header__menu header__menu-navigation">
 						<li class="header__menu-item">
 							<a class="header__menu-link" href="#">Праздники и события</a>
 						</li>
@@ -44,9 +42,35 @@
 							<a class="header__menu-link" href="#">Путеводитель</a>
 						</li>
 					</ul>
+					<div class="header__burger">
+						<span class="header__burger-bar"></span>
+						<span class="header__burger-bar"></span>
+						<span class="header__burger-bar"></span>
+					</div>
+					<nav class="header__nav-mobile">
+						<ul class="header__menu-mobile">
+							<li class="header__menu-mobile-item">
+								<a class="header__menu-mobile-link" href="#"
+									>Праздники и события</a
+								>
+							</li>
+							<li class="header__menu-mobile-item">
+								<a class="header__menu-mobile-link" href="#"
+									>Подарочный сертификат</a
+								>
+							</li>
+							<li class="header__menu-mobile-item">
+								<a class="header__menu-mobile-link" href="#">Партнёрам</a>
+							</li>
+							<li class="header__menu-mobile-item">
+								<a class="header__menu-mobile-link" href="#">Путеводитель</a>
+							</li>
+						</ul>
+					</nav>
 				</nav>
 			</div>
 		</header>
 		<script type="module" src="/src/js/main.js"></script>
+		<script src="./src/js/burger.js"></script>
 	</body>
 </html>
