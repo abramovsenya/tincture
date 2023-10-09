@@ -106,7 +106,7 @@
 		font-weight: 500;
 	}
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
 	.hero__content-about-title {
 		font-size: 32px;
 		padding-bottom: 6px;
@@ -114,12 +114,22 @@
 	.hero__content-about-description {
 		font-size: 14px;
 	}
+	.hero__nav-location-flag {
+		margin-right: 2px;
+	}
 	.hero__nav-location-contry {
 		margin-right: 10px;
 		font-size: 12px;
 	}
+	.hero__nav-price {
+		font-size: 10px;
+	}
 	.hero__nav-btn {
 		font-size: 12px;
+		padding: 6px 6px;
+	}
+	.hero__nav-btn_zakaz {
+		display: none;
 	}
 }
 // xuy
