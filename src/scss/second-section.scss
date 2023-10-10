@@ -1,0 +1,22 @@
+.second {
+	margin-top: 60px;
+}
+.swiper {
+	border-radius: 77px;
+}
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-slide img {
+	object-fit: cover;
+	border-radius: 76px;
+}
+
+.swiper-pagination {
+}
+
+.swiper-pagination-bullet-active {
+	background: $primary-color;
+}
