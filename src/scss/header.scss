@@ -22,10 +22,11 @@
 		}
 		&-item,
 		&-link {
-			color: $primary-color;
-			text-decoration: none;
-			font-weight: 500;
-			font-size: 14px;
+			// color: $primary-color;
+			// text-decoration: none;
+			// font-weight: 500;
+			// font-size: 14px;
+			@include mobile-link($primary-color);
 			&_orange {
 				color: $secondary-color;
 			}
@@ -72,10 +73,11 @@
 }
 
 .header__nav-mobile {
-	height: 100vh;
 	display: none;
-	padding-top: 42px;
 	padding: 14px 20px;
+	// padding-top: 42px;
+	// height: 100vh;
+
 	&.show {
 		display: flex;
 		position: fixed;
@@ -121,7 +123,7 @@
 	transition: all 0.2s ease-in-out;
 }
 // /burger
-@media (max-width: 1100px) {
+@media (max-width: $laptop) {
 	.header__menu {
 		column-gap: 15px;
 	}
@@ -133,13 +135,13 @@
 	}
 }
 
-@media (max-width: 530px) {
+@media (max-width: $mobile-l) {
 	.header__menu-link_orange {
 		display: none;
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: $mobile-s) {
 	.header__menu {
 		display: none;
 	}
