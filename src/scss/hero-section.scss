@@ -6,12 +6,30 @@
 
 .hero {
 	margin-top: 90px;
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	// 	&-locations {
+	// 		display: flex;
+	// 		&-flag {
+	// 			margin-right: 8px;
+	// 		}
+	// 		&-contry {
+	// 			margin-right: 20px;
+	// 		}
+	// 		// &-location {
+	// 		// 	display: flex;
+	// 		// }
+	// 	}
+	// }
 }
-.hero__nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+// .hero__nav {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// }
 .hero__nav-locations {
 	display: flex;
 	// column-gap: 32px;
@@ -19,73 +37,108 @@
 }
 .hero__nav-location {
 	display: flex;
+	&-flag {
+		margin-right: 8px;
+	}
+	&-contry {
+		margin-right: 20px;
+	}
 }
-.hero__nav-location-flag {
-	margin-right: 8px;
-}
-.hero__nav-location-contry {
-	margin-right: 20px;
-}
+// .hero__nav-location-flag {
+// 	margin-right: 8px;
+// }
+// .hero__nav-location-contry {
+// 	margin-right: 20px;
+// }
 .hero__nav-btn {
+	@include button($primary-color, $button-bg, 6px 8px);
 	align-items: center;
 	display: flex;
-	padding: 6px 8px;
-	background-color: #464646;
-	border-radius: 50px;
-	color: $primary-color;
+	// padding: 6px 8px;
+	// background-color: $button-bg;
+	// border-radius: 50px;
+	// color: $primary-color;
 
 	text-decoration: none;
 }
 .hero__nav-price {
-	color: $secondary-color;
-	padding: 2px 7px;
-	background-color: #fff;
-	border-radius: 50px;
+	// color: $secondary-color;
+	// padding: 2px 7px;
+	// background-color: #fff;
+	// border-radius: 50px;
+	@include button($secondary-color, $primary-color, 2px 7px);
 }
 
 .hero__content {
 	position: relative;
 	display: block;
+	&-images {
+		border-radius: 30px;
+		margin-top: 20px;
+
+		// max-width: 1200px;
+		width: 100%;
+	}
+	&-about {
+		max-width: 452px;
+		padding: 34px;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 20px;
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(244, 246, 250, 0.23);
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		&-title {
+			@include title-mixin(45px);
+		}
+		&-description {
+			// font-weight: 600;
+			// font-size: 18px;
+			@include text-body(18px, 600);
+		}
+	}
 }
 
-.hero__content-images {
-	border-radius: 30px;
-	margin-top: 20px;
+// .hero__content-images {
+// 	border-radius: 30px;
+// 	margin-top: 20px;
 
-	// max-width: 1200px;
-	width: 100%;
-}
+// 	// max-width: 1200px;
+// 	width: 100%;
+// }
 
-.hero__content-about {
-	max-width: 452px;
-	padding: 34px;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 20px;
-	backdrop-filter: blur(5px);
-	border: 1px solid rgba(244, 246, 250, 0.23);
+// .hero__content-about {
+// 	max-width: 452px;
+// 	padding: 34px;
+// 	background-color: rgba(0, 0, 0, 0.5);
+// 	border-radius: 20px;
+// 	backdrop-filter: blur(5px);
+// 	border: 1px solid rgba(244, 246, 250, 0.23);
 
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-.hero__content-about-title {
-	font-weight: 700;
-	font-size: 45px;
-}
-.hero__content-about-description {
-	font-weight: 600;
-	font-size: 18px;
-}
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 0;
+// // }
+// .hero__content-about-title {
+// 	@include title-mixin(45px);
+// }
+// .hero__content-about-description {
+// 	// font-weight: 600;
+// 	// font-size: 18px;
+// 	@include text-body(18px, 600);
+// }
 
-@media (max-width: 1100px) {
+@media (max-width: $laptop) {
 	.hero__content-about-title {
-		font-size: 38px;
+		@include title-mixin(38px);
 	}
 	.hero__content-about-description {
 		font-size: 16px;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
 	.hero__content {
 		display: flex;
 		flex-direction: column-reverse;
@@ -98,17 +151,20 @@
 		max-width: none;
 	}
 	.hero__content-about-title {
-		font-size: 40px;
+		// font-size: 40px;
+		@include title-mixin(40px);
 		padding-bottom: 6px;
 	}
 	.hero__content-about-description {
-		font-size: 16px;
-		font-weight: 500;
+		@include text-body(16px, 500);
+		// font-size: 16px;
+		// font-weight: 500;
 	}
 }
-@media (max-width: 425px) {
+@media (max-width: $mobile-l) {
 	.hero__content-about-title {
-		font-size: 32px;
+		// font-size: 32px;
+		@include title-mixin(32px);
 		padding-bottom: 6px;
 	}
 	.hero__content-about-description {
@@ -125,6 +181,9 @@
 		font-size: 10px;
 	}
 	.hero__nav-btn {
+		// @include button($color, $background-color, $padding);
+		// @include button($secondary-color, $primary-color, 6px 6px);
+		// ознакомиться нужно почему при миксине ломается
 		font-size: 12px;
 		padding: 6px 6px;
 	}
