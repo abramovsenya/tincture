@@ -1,0 +1,13 @@
+@mixin button($color, $background-color, $padding) {
+	border-radius: 50px;
+	color: $color;
+	background-color: $background-color;
+	padding: $padding;
+}
+
+@mixin mobile-link($primary-color) {
+	color: $primary-color;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+}
