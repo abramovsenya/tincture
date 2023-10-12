@@ -1,1 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@mixin mobile-link($primary-color) {
+	color: $primary-color;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+}

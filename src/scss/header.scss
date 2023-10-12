@@ -5,6 +5,7 @@
 	left: 0;
 	width: 100%;
 	padding: 14px 20px;
+	z-index: 1;
 
 	&__nav {
 		align-items: center;
@@ -144,5 +145,19 @@
 @media (max-width: $mobile-s) {
 	.header__menu {
 		display: none;
+	}
+	// .hero__nav-location-contry {
+	// 	display: flex;
+	// 	font-size: 10px;
+	// 	align-items: center;
+	/* margin-right: 10px; */
+	/* column-gap: 10px; */
+	// 	margin-right: 10px;
+	// }
+	.hero__nav-price {
+		display: none;
+	}
+	.hero__nav-location-flag {
+		margin-right: 6px;
 	}
 }
