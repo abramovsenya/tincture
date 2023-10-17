@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
 		/>
 		<title>Tincture</title>
 	</head>
@@ -28,79 +28,20 @@
 						</button>
 					</form>
 				</div>
+				<!-- <product-list></product-list> -->
+
+				<!-- <swiper-slide class="swiper-slide" name=""> </swiper-slide> -->
+				<product-list class="swiper-wrapper"> </product-list>
+
 				<!-- <div class="swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="./src/assets/images/products/chips.jpg" alt="eda" />
-							<div class="swiper-slide__about">
-								<p class="swiper-slide__about-name">Чипсы, 50гр</p>
-								<p class="swiper-slide__about-about">Вкус: соль</p>
-								<p class="swiper-slide__about-about-price">120 ₽</p>
-								<div class="swiper-slide__about-description"></div>
-								<a class="swiper-slide__about-btn" href="#">
-									<img src="./src/assets/icons/podond.svg" alt="icon" />В
-									заказ</a
-								>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="../src/assets/images/products/chips.jpg" alt="eda" />
-							<div class="swiper-slide__about">
-								<p class="swiper-slide__about-name">Чипсы, 50гр</p>
-								<p class="swiper-slide__about-about">Вкус: соль</p>
-								<p class="swiper-slide__about-about-price">120 ₽</p>
-								<a class="swiper-slide__about-btn" href="#">
-									<img src="./src/assets/icons/podond.svg" alt="icon" />В
-									заказ</a
-								>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="./src/assets/images/products/chips.jpg" alt="eda" />
-							<div class="swiper-slide__about">
-								<p class="swiper-slide__about-name">Чипсы, 50гр</p>
-								<p class="swiper-slide__about-about">Вкус: соль</p>
-								<p class="swiper-slide__about-about-price">120 ₽</p>
-								<a class="swiper-slide__about-btn" href="#">
-									<img src="./src/assets/icons/podond.svg" alt="icon" />В
-									заказ</a
-								>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="./src/assets/images/products/chips.jpg" alt="eda" />
-							<div class="swiper-slide__about">
-								<p class="swiper-slide__about-name">Чипсы, 50гр</p>
-								<p class="swiper-slide__about-about">Вкус: соль</p>
-								<p class="swiper-slide__about-about-price">120 ₽</p>
-								<a class="swiper-slide__about-btn" href="#">
-									<img src="./src/assets/icons/podond.svg" alt="icon" />В
-									заказ</a
-								>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="./src/assets/images/products/chips.jpg" alt="eda" />
-							<div class="swiper-slide__about">
-								<p class="swiper-slide__about-name">Чипсы, 50гр</p>
-								<p class="swiper-slide__about-about">Вкус: соль</p>
-								<p class="swiper-slide__about-about-price">120 ₽</p>
-								<a class="swiper-slide__about-btn" href="#">
-									<img src="./src/assets/icons/podond.svg" alt="icon" />В
-									заказ</a
-								>
-							</div>
-						</div>
-					</div>
 					<div class="swiper-pagination"></div>
 				</div> -->
-				<div class="post-container"></div>
 			</div>
 		</section>
 		<script type="module" src="/src/js/main.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 		<script src="/src/js/carousel.js"></script>
-		<script src="/src/js/fetchProducts.js"></script>
-		<script src="/api/getApi.js"></script>
+		<script src="/src/js/cardProduct.js"></script>
+		<script type="module" src="/src/js/product-list.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</body>
 </html>
