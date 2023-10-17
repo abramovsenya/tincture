@@ -13,10 +13,10 @@ async function getPosts(start, limit) {
 			const postElement = document.createElement('div');
 			postElement.classList.add('post');
 			postElement.innerHTML = `
-				<img src="${post.image}">
+				<img src="${post.image}">				
 				<div class="swiper-slide__about">
         <p class="swiper-slide__about-name">${post.name}</p>
-        <p class="swiper-slide__about-about">${post.descriptions}</p>
+         <p class="swiper-slide__about-about">${post.descriptions}</p>
 				<p class="swiper-slide__about-about-price">${post.price}₽</p>
 				<a class="swiper-slide__about-btn" href="#"><img src="./src/assets/icons/podond.svg" alt="icon" />В	заказ</a>
 				</div>
@@ -44,3 +44,46 @@ window.addEventListener('scroll', async () => {
 		await getPosts(start, limit);
 	}
 });
+
+// // https://api.currencyapi.com/v3/latest?currencies=${code}&apikey=${currencyKey}
+// console.log(1);
+// const aaa = defineEventHandler(async event => {
+// 	const { code } = event.context.params;
+// 	const { currencyKey } = useRuntimeConfig();
+
+// 	const uri = `https://api.currencyapi.com/v3/latest?currencies=${code}&apikey=${currencyKey}`;
+
+// 	const { data } = await $fetch(uri);
+
+// 	return data;
+// });
+
+// // export default defineEventHandler(async event => {
+// // 	const { code } = event.context.params;
+// // 	const { currencyKey } = useRuntimeConfig();
+// // 	// https://api.currencyapi.com/v3/latest?currencies=${code}&apikey=${currencyKey}
+// // 	const uri = `https://api.currencyapi.com/v3/latest?currencies=${code}&apikey=${currencyKey}`;
+
+// // 	const { data } = await $fetch(uri);
+
+// // 	return data;
+// // });
+
+// ///////////
+// // async function getInfo(url) {
+// // 	try {
+// // 		const response = await fetch(url);
+// // 		const data = await response.json();
+// // 		return data;
+// // 	} catch (error) {
+// // 		console.log('Ошибка:', error);
+// // 	}
+// // }
+
+// // // Пример использования функции
+// // const apiUrl = 'https://api.example.com/data';
+// // getInfo(apiUrl).then(data => {
+// // 	// Обрабатываем полученные данные
+// // 	console.log(data);
+// // });
+// /////////////////
