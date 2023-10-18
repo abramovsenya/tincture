@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
 		<title>Tincture</title>
 	</head>
 	<body class="page">
@@ -70,7 +74,129 @@
 				</nav>
 			</div>
 		</header>
+		<section class="second">
+			<div class="second__inner container">
+				<h2 class="second-title">Закусь</h2>
+				<div class="second__content">
+					<div class="second__content-buttons">
+						<a class="second__content-buttons-button" href="#">Роллы</a>
+						<a class="second__content-buttons-button" href="#">Пицца</a>
+						<a class="second__content-buttons-button" href="#">Устрицы</a>
+						<a class="second__content-buttons-button" href="#">Острое</a>
+						<a class="second__content-buttons-button" href="#">Новинки</a>
+					</div>
+					<form class="search-bar" action="">
+						<input type="text" placeholder="Поиск..." name="q" />
+						<button type="submit">
+							<img src="./src/assets/icons/lupa.svg" alt="#" />
+						</button>
+					</form>
+				</div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-slide__about">
+								<img src="./src/assets/images/chips.jpg" alt="eda" />
+								<div class="swiper-slide__about-inner">
+									<p class="swiper-slide__about-inner-name">Чипсы, 50гр</p>
+									<p class="swiper-slide__about-inner-about">Вкус: соль</p>
+									<div class="swiper-slide__about-inner-down">
+										<p class="swiper-slide__about-inner-down-price">120 ₽</p>
+										<a class="swiper-slide__about-inner-down-btn" href="#"
+											><img
+												src="./src/assets/icons/corzina.svg"
+												alt="corzina"
+											/>В заказ</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__about">
+								<img src="./src/assets/images/berry.jpg" alt="eda" />
+								<div class="swiper-slide__about-inner">
+									<p class="swiper-slide__about-inner-name">Клубника, 150гр</p>
+									<p class="swiper-slide__about-inner-about">
+										Нарезанная дольками
+									</p>
+									<div class="swiper-slide__about-inner-down">
+										<p class="swiper-slide__about-inner-down-price">120 ₽</p>
+										<a class="swiper-slide__about-inner-down-btn" href="#"
+											><img
+												src="./src/assets/icons/corzina.svg"
+												alt="corzina"
+											/>В заказ</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__about">
+								<img src="./src/assets/images/humus.jpg" alt="eda" />
+								<div class="swiper-slide__about-inner">
+									<p class="swiper-slide__about-inner-name">Печеный хумус</p>
+									<p class="swiper-slide__about-inner-about">
+										Нут, тахини, вино, кумин
+									</p>
+									<div class="swiper-slide__about-inner-down">
+										<p class="swiper-slide__about-inner-down-price">120 ₽</p>
+										<a class="swiper-slide__about-inner-down-btn" href="#"
+											><img
+												src="./src/assets/icons/corzina.svg"
+												alt="corzina"
+											/>В заказ</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-slide__about">
+								<img src="./src/assets/images/cruassan.jpg" alt="eda" />
+								<div class="swiper-slide__about-inner">
+									<p class="swiper-slide__about-inner-name">Круассаны, 70гр</p>
+									<p class="swiper-slide__about-inner-about">Сливочный сыр</p>
+									<div class="swiper-slide__about-inner-down">
+										<p class="swiper-slide__about-inner-down-price">120 ₽</p>
+										<a class="swiper-slide__about-inner-down-btn" href="#"
+											><img
+												src="./src/assets/icons/corzina.svg"
+												alt="corzina"
+											/>В заказ</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__about">
+								<img src="./src/assets/images/berry.jpg" alt="tattoo" />
+								<div class="swiper-slide__about-inner">
+									<p class="swiper-slide__about-inner-name">Чипсы, 50гр</p>
+									<p class="swiper-slide__about-inner-about">Вкус: соль</p>
+									<div class="swiper-slide__about-inner-down">
+										<p class="swiper-slide__about-inner-down-price">120 ₽</p>
+										<a class="swiper-slide__about-inner-down-btn" href="#"
+											><img
+												src="./src/assets/icons/corzina.svg"
+												alt="corzina"
+											/>В заказ</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
 		<script type="module" src="/src/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 		<script src="./src/js/burger.js"></script>
+		<script src="./src/js/carousel.js"></script>
 	</body>
 </html>
