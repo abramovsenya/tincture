@@ -124,3 +124,9 @@
 .swiper-pagination-bullet-active {
 	background: coral;
 }
+
+.fourth__btn {
+	@include button($secondary-color, #ffe9dc, 10px 30px);
+	text-decoration: none;
+	padding-top: 10px;
+}
