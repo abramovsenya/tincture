@@ -1,4 +1,4 @@
-.container {
+scss .container {
 	padding: 14px 20px;
 }
 .second {
@@ -21,7 +21,24 @@
 		}
 	}
 }
+// .second-title {
+// 	font-size: 35px;
+// 	color: $primary-color;
+// 	padding-bottom: 15px;
+// }
+// .second__content {
+// 	justify-content: space-between;
+// 	display: flex;
+// }
 
+// .second__content-buttons {
+// 	display: flex;
+// 	column-gap: 12px;
+// }
+// .second__content-buttons-button {
+// 	@include button($primary-color, #464646, 7px 15px);
+// 	text-decoration: none;
+// }
 .second__content-buttons-button:hover {
 	color: $secondary-color;
 	transition: ease-in-out 0.3s;
@@ -65,7 +82,7 @@
 .swiper-slide__about {
 	color: $primary-color;
 	background-color: #464646;
-	max-width: 232px;
+	width: 590px;
 	border-radius: 20px;
 	margin: 10px;
 }
@@ -75,10 +92,11 @@
 .swiper-slide__about img {
 	color: $primary-color;
 	border-radius: 20px;
-	max-width: 232px;
+	// max-width: 232px;
 }
 .swiper-slide__about-inner-name {
 	font-size: 18px;
+	margin-left: 20px;
 }
 
 .swiper-slide__about-inner-about {
@@ -86,6 +104,7 @@
 	font-weight: 400;
 	color: rgba(227, 227, 227, 0.6);
 	margin-top: 10px;
+	// margin-left: 30px;
 }
 .swiper-slide__about-inner-down {
 	justify-content: space-between;
@@ -106,6 +125,17 @@
 
 .swiper-pagination-bullet-active {
 	background: coral;
+}
+
+.swiper-slide__about-inner-up {
+	display: flex;
+	align-items: center;
+}
+
+.swiper-slide__about-inner-medium {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
 }
 
 .fourth__btn {
