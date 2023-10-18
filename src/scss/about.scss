@@ -1,0 +1,24 @@
+.container {
+	padding: 14px 20px;
+}
+.about {
+	margin-top: 100px;
+	color: $primary-color;
+}
+.second-title {
+	font-size: 35px;
+}
+.second__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.second__content-pluses-plus {
+	max-width: 370px;
+	font-size: 18px;
+	padding: 40px 20px;
+	background-color: #4f4f4f;
+	border-radius: 20px;
+}
