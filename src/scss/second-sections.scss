@@ -78,6 +78,16 @@
 }
 .swiper-slide {
 	color: rgba(227, 227, 227, 0.6);
+	// background-color: #464646;
+	max-width: 250px;
+}
+.swiper-slide__link {
+	text-decoration: none;
+	color: $primary-color;
+}
+.swiper-slide__image {
+	border-radius: 20px;
+	// z-index: -1;
 }
 .swiper-slide__about {
 	color: $primary-color;
@@ -129,4 +139,28 @@
 	@include button($secondary-color, #ffe9dc, 10px 30px);
 	text-decoration: none;
 	padding-top: 10px;
+}
+// p {
+// 	font-size: 14px;
+// 	color: rgb(223 223 223);
+// }
+
+// .post-container {
+// 	max-width: 1440px;
+// 	margin: 0 auto;
+// 	display: flex;
+// 	flex-direction: column;
+// 	row-gap: 20px;
+// }
+// .post {
+// 	padding: 20px;
+// 	border: 1px solid #414141;
+// }
+@media (max-width: 620px) {
+	.second__content-buttons {
+		display: none;
+	}
+	.search-bar {
+		display: flex;
+	}
 }

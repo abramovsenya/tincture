@@ -13,38 +13,38 @@
 	},
 	{
 		"image": "./src/assets/images/products/humus.jpg",
-		"name": "Печеный хумус с бастурмой",
-		"descriptions": "Нут, тахини, вино, кумин, паприка, бастурма",
+		"name": "Печеный хумус",
+		"descriptions": "Нут, тахини, вино, кумин",
 		"price": 180
 	},
 	{
 		"image": "./src/assets/images/products/cruassan.jpg",
 		"name": "Круассаны",
-		"descriptions": "Сливочный сыр, копченый лосось, лисонный сок",
+		"descriptions": "Сливочный сыр",
 		"price": 220
 	},
 	{
 		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино белое сухое",
-		"descriptions": "Белое сухое французское вино",
+		"descriptions": "Белое сухое вино",
 		"price": 480
 	},
 	{
 		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино красное ",
-		"descriptions": "Красное сладкое итальянское вино",
+		"descriptions": "Красное сладкое вино",
 		"price": 480
 	},
 	{
 		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино розовое сухое",
-		"descriptions": "Розовое сухое французское вино",
+		"descriptions": "Розовое сухое вино",
 		"price": 480
 	},
 	{
 		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино красное сухое",
-		"descriptions": "Красное сухое французское вино",
+		"descriptions": "Красное сухое вино",
 		"price": 480
 	}
 ]
