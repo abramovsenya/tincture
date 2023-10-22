@@ -6,43 +6,43 @@
 		"price": 120
 	},
 	{
-		"image": "/src/assets/images/products/chips.jpg",
+		"image": "./src/assets/images/products/berry.jpg",
 		"name": "Клубника",
 		"descriptions": "Нарезанная дольками",
 		"price": 150
 	},
 	{
-		"image": "/src/assets/images/products/chips.jpg",
+		"image": "./src/assets/images/products/humus.jpg",
 		"name": "Печеный хумус с бастурмой",
 		"descriptions": "Нут, тахини, вино, кумин, паприка, бастурма",
 		"price": 180
 	},
 	{
-		"image": "/src/assets/images/products/chips.jpg",
+		"image": "./src/assets/images/products/cruassan.jpg",
 		"name": "Круассаны",
 		"descriptions": "Сливочный сыр, копченый лосось, лисонный сок",
 		"price": 220
 	},
 	{
-		"image": "/src/assets/images/products/chips.jpg",
+		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино белое сухое",
 		"descriptions": "Белое сухое французское вино",
 		"price": 480
 	},
 	{
-		"image": "/src/assets/images/products/chips.jpg",
+		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино красное ",
 		"descriptions": "Красное сладкое итальянское вино",
 		"price": 480
 	},
 	{
-		"image": "/src/assets/images/products/chips.jpg",
+		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино розовое сухое",
 		"descriptions": "Розовое сухое французское вино",
 		"price": 480
 	},
 	{
-		"image": "/src/assets/images/products/chips.jpg",
+		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино красное сухое",
 		"descriptions": "Красное сухое французское вино",
 		"price": 480

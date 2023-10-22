@@ -2,7 +2,7 @@ import { promise } from './fetch.js';
 
 promise
 	.then(products => {
-		const productsContainer = document.querySelector('.post-container');
+		const productsContainer = document.querySelector('.swiper-wrapper');
 
 		products.forEach(post => {
 			const productsElement = document.createElement('div');
