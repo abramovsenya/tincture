@@ -10,60 +10,58 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
-}
-
-.hero__nav-locations {
-	display: flex;
-}
-.hero__nav-location {
-	display: flex;
-	&-flag {
-		margin-right: 8px;
-	}
-	&-city {
-		margin-right: 20px;
-	}
-}
-
-.hero__nav-btn {
-	@include button($primary-color, $button-bg, 6px 8px);
-	align-items: center;
-	display: flex;
-	text-decoration: none;
-}
-.hero__nav-price {
-	@include button($secondary-color, $primary-color, 2px 7px);
-}
-
-.hero__content {
-	position: relative;
-	display: block;
-	&-images {
-		border-radius: 30px;
-		margin-top: 20px;
-		width: 100%;
-	}
-	&-about {
-		max-width: 452px;
-		padding: 34px;
-		background-color: rgba(0, 0, 0, 0.5);
-		border-radius: 20px;
-		backdrop-filter: blur(5px);
-		border: 1px solid rgba(244, 246, 250, 0.23);
-
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		&-title {
-			@include title-mixin(45px);
+		&-locations {
+			display: flex;
 		}
-		&-description {
-			@include text-body(18px, 600);
+		&-location {
+			display: flex;
+			&-flag {
+				margin-right: 8px;
+			}
+			&-city {
+				margin-right: 20px;
+			}
+		}
+		&-btn {
+			@include button($primary-color, $button-bg, 6px 8px);
+			align-items: center;
+			display: flex;
+			text-decoration: none;
+		}
+		&-price {
+			@include button($secondary-color, $primary-color, 2px 7px);
+		}
+	}
+	&__content {
+		position: relative;
+		display: block;
+		&-images {
+			border-radius: 30px;
+			margin-top: 20px;
+			width: 100%;
+		}
+		&-about {
+			max-width: 452px;
+			padding: 34px;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+			backdrop-filter: blur(5px);
+			border: 1px solid rgba(244, 246, 250, 0.23);
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			&-title {
+				@include title-mixin(45px);
+			}
+			&-description {
+				@include text-body(18px, 600);
+			}
 		}
 	}
 }
 
+// media
 @media (max-width: $laptop) {
 	.hero__content-about-title {
 		@include title-mixin(38px);
@@ -115,8 +113,16 @@
 		font-size: 12px;
 		padding: 6px 6px;
 	}
-	.hero__nav-btn_zakaz {
+	.hero__nav-btn_order {
 		display: none;
 	}
+}
+
+.a {
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	color: $primary-color;
 }
 // xuy
