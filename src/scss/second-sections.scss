@@ -14,8 +14,9 @@
 		&-buttons {
 			display: flex;
 			column-gap: 12px;
+			overflow-y: auto;
 			&-button {
-				@include button($primary-color, #464646, 7px 15px);
+				@include button($primary-color, $button-bg, 7px 15px);
 				text-decoration: none;
 			}
 		}
@@ -28,14 +29,14 @@
 }
 
 .search-bar {
-	max-width: 580px;
-	// width: 100%;`
-	background-color: #464646;
+	max-width: 250px;
+	width: 100%;
+	background-color: $button-bg;
 	display: flex;
 	align-items: center;
 	border-radius: 50px;
 	// padding: 10px;
-	border: 1px solid #fff;
+	border: 1px solid $primary-color;
 }
 .search-bar input {
 	background-color: transparent;
@@ -47,24 +48,24 @@
 }
 ::placeholder {
 	color: transparent;
-	color: #fff;
-	// font-size: 16px;
+	color: $primary-color;
 }
 .search-bar button img {
 }
 .search-bar button {
 	border: 0;
 	background-color: transparent;
+	margin-right: 10px;
 }
+// свайпер слайдер
 .swiper {
 	margin-top: 30px;
 }
 .swiper-slide {
 	color: rgba(227, 227, 227, 0.6);
-	// background-color: #464646;
 	max-width: 266px;
 	border-radius: 20px;
-	background-color: #464646;
+	background-color: $button-bg;
 }
 .swiper-slide__link {
 	text-decoration: none;
@@ -73,7 +74,6 @@
 .swiper-slide__image {
 	border-radius: 20px;
 	width: 266px;
-	// z-index: -1;
 }
 .swiper-slide__about {
 	color: $primary-color;
@@ -120,22 +120,55 @@
 .swiper-pagination-bullet-active {
 	background: coral;
 }
-
+// свайпер закончился
 .fourth__btn {
 	@include button($secondary-color, #ffe9dc, 10px 30px);
 	text-decoration: none;
 	padding-top: 10px;
 }
-
-@media (max-width: 620px) {
-	.second__content-buttons {
-		display: none;
+// media
+@media (max-width: $laptop) {
+	.second {
+		margin-top: 40px;
 	}
 	.search-bar {
-		display: flex;
+		max-width: 220px;
 	}
 }
-@media (max-width: 375px) {
+@media (max-width: $tablet) {
+	.second {
+		margin-top: 20px;
+	}
+	.second__content-buttons {
+		column-gap: 10px;
+	}
+}
+
+@media (max-width: $mobile-l) {
+	.second {
+		margin-top: 10px;
+	}
+	.second__content-buttons {
+		column-gap: 13px;
+	}
+	.search-bar input {
+		max-width: 120px;
+	}
+}
+@media (max-width: $mobile-s) {
+	.search-bar {
+		width: auto;
+		align-items: center;
+	}
+	.search-bar input {
+		display: none;
+	}
+	.search-bar button {
+		margin: 2px 6px;
+	}
+	.second__content-buttons {
+		column-gap: 10px;
+	}
 	.fourth__btn {
 		display: block;
 		margin-top: 20px;
