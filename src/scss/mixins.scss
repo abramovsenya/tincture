@@ -3,11 +3,14 @@
 	color: $color;
 	background-color: $background-color;
 	padding: $padding;
+	// font-size: $font-size;
+	// можно подумать о том чтобы в миксин с кнопкой добавить размер шрифта
 }
 
-@mixin mobile-link($primary-color) {
-	color: $primary-color;
+@mixin text-body($font-size, $font-weight) {
+	font-size: $font-size;
 	text-decoration: none;
-	font-weight: 500;
-	font-size: 14px;
+
+	font-weight: $font-weight;
+	color: $primary-color;
 }
