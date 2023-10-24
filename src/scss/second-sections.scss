@@ -2,7 +2,7 @@
 	padding: 14px 20px;
 }
 .second {
-	margin-top: 100px;
+	margin-top: 80px;
 	&-title {
 		font-size: 35px;
 		color: $primary-color;
@@ -21,24 +21,7 @@
 		}
 	}
 }
-// .second-title {
-// 	font-size: 35px;
-// 	color: $primary-color;
-// 	padding-bottom: 15px;
-// }
-// .second__content {
-// 	justify-content: space-between;
-// 	display: flex;
-// }
 
-// .second__content-buttons {
-// 	display: flex;
-// 	column-gap: 12px;
-// }
-// .second__content-buttons-button {
-// 	@include button($primary-color, #464646, 7px 15px);
-// 	text-decoration: none;
-// }
 .second__content-buttons-button:hover {
 	color: $secondary-color;
 	transition: ease-in-out 0.3s;
@@ -143,22 +126,7 @@
 	text-decoration: none;
 	padding-top: 10px;
 }
-// p {
-// 	font-size: 14px;
-// 	color: rgb(223 223 223);
-// }
 
-// .post-container {
-// 	max-width: 1440px;
-// 	margin: 0 auto;
-// 	display: flex;
-// 	flex-direction: column;
-// 	row-gap: 20px;
-// }
-// .post {
-// 	padding: 20px;
-// 	border: 1px solid #414141;
-// }
 @media (max-width: 620px) {
 	.second__content-buttons {
 		display: none;
