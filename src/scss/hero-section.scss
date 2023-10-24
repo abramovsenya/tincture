@@ -61,6 +61,13 @@
 	}
 }
 
+.links {
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	color: $primary-color;
+}
 // media
 @media (max-width: $laptop) {
 	.hero__content-about-title {
@@ -118,11 +125,4 @@
 	}
 }
 
-.a {
-	text-decoration: none;
-	text-align: center;
-	align-items: center;
-	display: flex;
-	color: $primary-color;
-}
 // xuy
