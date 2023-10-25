@@ -61,8 +61,8 @@
 	margin-top: 30px;
 }
 .swiper-slide {
-	color: rgba(227, 227, 227, 0.6);
-	max-width: 266px;
+	color: $card-description-color;
+	max-width: 250px;
 	border-radius: 20px;
 	background-color: $button-bg;
 }
@@ -72,7 +72,7 @@
 }
 .swiper-slide__image {
 	border-radius: 20px;
-	width: 266px;
+	// width: 266px;
 }
 .swiper-slide__about {
 	color: $primary-color;
@@ -90,13 +90,12 @@
 	max-width: 232px;
 }
 .swiper-slide__about-inner-name {
-	font-size: 18px;
+	@include text-body(18px, 500);
 }
 
 .swiper-slide__about-inner-about {
-	font-size: 14px;
-	font-weight: 400;
-	color: rgba(227, 227, 227, 0.6);
+	@include text-body(14px, 400);
+	color: $card-description-color;
 	margin-top: 10px;
 }
 .swiper-slide__about-inner-down {
@@ -108,7 +107,7 @@
 }
 
 .swiper-slide__about-inner-down-price {
-	font-size: 22px;
+	@include text-body(22px, 600);
 	display: flex;
 }
 .swiper-slide__about-inner-down-btn {
@@ -117,10 +116,10 @@
 }
 
 .swiper-pagination-bullet-active {
-	background: coral;
+	background-color: $pagination-color;
 }
 // свайпер закончился
-.more__btn {
+.swiper__more-btn {
 	@include button($secondary-color, #ffe9dc, 10px 30px);
 	text-decoration: none;
 	margin-top: 40px;
@@ -156,7 +155,7 @@
 	.search-bar input {
 		max-width: 120px;
 	}
-	.more__btn {
+	.swiper__more-btn {
 		display: block;
 		float: none;
 		text-align: center;
