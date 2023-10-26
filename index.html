@@ -74,6 +74,76 @@
 				</nav>
 			</div>
 		</header>
+		<section class="hero">
+			<div class="hero__inner container">
+				<nav class="hero__nav">
+					<div class="hero__nav-locations">
+						<a class="links" href=""
+							><img
+								class="hero__nav-location-flag"
+								src="./src/assets/icons/flag.svg"
+								alt="flag"
+							/>
+							<span class="hero__nav-location-city">Санкт-Петербург</span></a
+						>
+						<a class="links" href="">
+							<img
+								class="hero__nav-location-flag"
+								z
+								src="./src/assets/icons/flag.svg"
+								alt="flag"
+							/>
+							<span class="hero__nav-location-city">Москва</span>
+						</a>
+					</div>
+					<a class="hero__nav-btn" href="basket"
+						><img src="./src/assets/icons/shopping-basket.svg" alt="shop" />
+						<span class="hero__nav-btn_order">Ваш заказ </span
+						><span class="hero__nav-price">9450 ₽</span>
+					</a>
+				</nav>
+				<div class="hero__content">
+					<img
+						class="hero__content-images"
+						src="./src/assets/images/promo.jpg"
+						alt="promo"
+					/>
+					<div class="hero__content-about">
+						<h1 class="hero__content-about-title">Выходное меню</h1>
+						<p class="hero__content-about-description">
+							Здесь вы можете заказать еду в выходной день. Сделайте это в любое
+							время, заблаговременно до посещения. Минимальное время заказа
+							указано рядом с названием каждой настоишной.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="second">
+			<div class="second__inner container">
+				<h2 class="second-title">Закусь</h2>
+				<div class="second__content">
+					<div class="second__content-buttons">
+						<a class="second__content-buttons-button" href="#">Роллы</a>
+						<a class="second__content-buttons-button" href="#">Пицца</a>
+						<a class="second__content-buttons-button" href="#">Устрицы</a>
+						<a class="second__content-buttons-button" href="#">Острое</a>
+						<a class="second__content-buttons-button" href="#">Новинки</a>
+					</div>
+					<form class="search-bar" action="">
+						<input type="text" placeholder="Поиск..." name="q" />
+						<button type="submit">
+							<img src="./src/assets/icons/lupa.svg" alt="#" />
+						</button>
+					</form>
+				</div>
+				<div class="swiper">
+					<div class="swiper-wrapper"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<a class="second__more-btn" href="#">Показать ещё</a>
+			</div>
+		</section>
 		<section class="third">
 			<div class="second__inner container">
 				<h2 class="second-title">Напитки</h2>
@@ -195,8 +265,11 @@
 			</div>
 		</section>
 		<script type="module" src="/src/js/main.js"></script>
-		<script src="./src/js/burger.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="./src/js/burger.js"></script>
 		<script src="./src/js/carousel.js"></script>
+		<script type="module" src="./src/server/api.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+		<!-- <script src="./src/js/carousel.js"></script> -->
 	</body>
 </html>
