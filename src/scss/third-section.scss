@@ -1,8 +1,10 @@
+// @import '/src/scss/second-sections.scss';
+
 .container {
 	padding: 14px 20px;
 }
-.second {
-	margin-top: 100px;
+.third {
+	margin-top: 80px;
 	&-title {
 		font-size: 35px;
 		color: $primary-color;
@@ -14,28 +16,28 @@
 		&-buttons {
 			display: flex;
 			column-gap: 12px;
+			overflow-y: auto;
 			&-button {
-				@include button($primary-color, #464646, 7px 15px);
+				@include button($primary-color, $button-bg, 7px 15px);
 				text-decoration: none;
 			}
 		}
 	}
 }
 
-.second__content-buttons-button:hover {
+.third__content-buttons-button:hover {
 	color: $secondary-color;
 	transition: ease-in-out 0.3s;
 }
 
 .search-bar {
-	max-width: 580px;
-	// width: 100%;`
-	background-color: #464646;
+	max-width: 250px;
+	width: 100%;
+	background-color: $button-bg;
 	display: flex;
 	align-items: center;
 	border-radius: 50px;
-	// padding: 10px;
-	border: 1px solid #fff;
+	border: 1px solid $primary-color;
 }
 .search-bar input {
 	background-color: transparent;
@@ -47,25 +49,37 @@
 }
 ::placeholder {
 	color: transparent;
-	color: #fff;
-	// font-size: 16px;
+	color: $primary-color;
 }
 .search-bar button img {
 }
 .search-bar button {
 	border: 0;
 	background-color: transparent;
+	margin-right: 10px;
 }
+// свайпер слайдер
 .swiper {
 	margin-top: 30px;
 }
 .swiper-slide {
-	color: rgba(227, 227, 227, 0.6);
+	color: $card-description-color;
+	max-width: 250px;
+	border-radius: 20px;
+	background-color: $button-bg;
+}
+.swiper-slide__link {
+	text-decoration: none;
+	color: $primary-color;
+}
+.swiper-slide__image {
+	border-radius: 20px;
+	// width: 266px;
 }
 .swiper-slide__about {
 	color: $primary-color;
-	background-color: #464646;
-	max-width: 232px;
+	background-color: $button-bg;
+	max-width: 250px;
 	border-radius: 20px;
 	margin: 10px;
 }
@@ -78,13 +92,12 @@
 	max-width: 232px;
 }
 .swiper-slide__about-inner-name {
-	font-size: 18px;
+	@include text-body(18px, 500);
 }
 
 .swiper-slide__about-inner-about {
-	font-size: 14px;
-	font-weight: 400;
-	color: rgba(227, 227, 227, 0.6);
+	@include text-body(14px, 400);
+	color: $card-description-color;
 	margin-top: 10px;
 }
 .swiper-slide__about-inner-down {
@@ -96,7 +109,7 @@
 }
 
 .swiper-slide__about-inner-down-price {
-	font-size: 22px;
+	@include text-body(22px, 600);
 	display: flex;
 }
 .swiper-slide__about-inner-down-btn {
@@ -105,11 +118,63 @@
 }
 
 .swiper-pagination-bullet-active {
-	background: coral;
+	background-color: $pagination-color;
 }
-
-.fourth__btn {
+// свайпер закончился
+.third__more-btn {
 	@include button($secondary-color, #ffe9dc, 10px 30px);
 	text-decoration: none;
-	padding-top: 10px;
+	margin-top: 40px;
+	display: inline-block;
+	float: inline-end;
+}
+
+// media
+@media (max-width: $laptop) {
+	.third {
+		margin-top: 40px;
+	}
+	.search-bar {
+		max-width: 220px;
+	}
+}
+@media (max-width: $tablet) {
+	.third {
+		margin-top: 20px;
+	}
+	.third__content-buttons {
+		column-gap: 10px;
+	}
+}
+
+@media (max-width: $mobile-l) {
+	.third {
+		margin-top: 10px;
+	}
+	.third__content-buttons {
+		column-gap: 13px;
+	}
+	.search-bar input {
+		max-width: 120px;
+	}
+	.third__more-btn {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+}
+@media (max-width: $mobile-s) {
+	.search-bar {
+		width: auto;
+		align-items: center;
+	}
+	.search-bar input {
+		display: none;
+	}
+	.search-bar button {
+		margin: 2px 6px;
+	}
+	.third__content-buttons {
+		column-gap: 10px;
+	}
 }
