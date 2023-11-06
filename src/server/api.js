@@ -7,7 +7,7 @@ promise
 		products.forEach(post => {
 			const productsElement = document.createElement('div');
 			productsElement.classList.add('swiper-slide');
-			productsElement.innerHTML = `<a class='swiper-slide__link' href='#'>
+			productsElement.innerHTML = `<a class='swiper-slide__link' href='/src/pages/card.html'>
 			<img
 				class='swiper-slide__image'
 				src='${post.image}'
