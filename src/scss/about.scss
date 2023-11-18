@@ -9,16 +9,31 @@
 	font-size: 35px;
 }
 .second__content {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
 }
 
 .second__content-pluses-plus {
-	max-width: 370px;
+	max-width: 336px;
 	font-size: 18px;
-	padding: 40px 20px;
-	background-color: #4f4f4f;
+	padding: 20px;
+	background-color: $button-bg;
 	border-radius: 20px;
+}
+
+@media (max-width: $mobile-l) {
+	.second__content {
+		grid-template-columns: 1fr;
+	}
+	.second__content-pluses-plus {
+		max-width: 724px;
+		// font-size: 14px;
+	}
+}
+
+@media (max-width: $mobile-l) {
+	.second__content-pluses-plus {
+		font-size: 14px;
+	}
 }
