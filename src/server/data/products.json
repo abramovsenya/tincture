@@ -3,48 +3,56 @@
 		"image": "./src/assets/images/products/chips.jpg",
 		"name": "Чипсы",
 		"descriptions": "Вкус: соль",
-		"price": 120
+		"price": 120,
+		"category": "food"
 	},
 	{
 		"image": "./src/assets/images/products/berry.jpg",
 		"name": "Клубника",
 		"descriptions": "Нарезанная дольками",
-		"price": 150
+		"price": 150,
+		"category": "food"
 	},
 	{
 		"image": "./src/assets/images/products/humus.jpg",
 		"name": "Печеный хумус",
 		"descriptions": "Нут, тахини, вино, кумин",
-		"price": 180
+		"price": 180,
+		"category": "food"
 	},
 	{
 		"image": "./src/assets/images/products/cruassan.jpg",
 		"name": "Круассаны",
 		"descriptions": "Сливочный сыр",
-		"price": 220
+		"price": 220,
+		"category": "food"
 	},
 	{
 		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино белое сухое",
 		"descriptions": "Белое сухое вино",
-		"price": 480
+		"price": 480,
+		"category": "alcohol"
 	},
 	{
 		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино красное ",
 		"descriptions": "Красное сладкое вино",
-		"price": 480
+		"price": 480,
+		"category": "alcohol"
 	},
 	{
 		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино розовое сухое",
 		"descriptions": "Розовое сухое вино",
-		"price": 480
+		"price": 480,
+		"category": "alcohol"
 	},
 	{
 		"image": "./src/assets/images/products/vine.jpg",
 		"name": "Вино красное сухое",
 		"descriptions": "Красное сухое вино",
-		"price": 480
+		"price": 480,
+		"category": "alcohol"
 	}
 ]
