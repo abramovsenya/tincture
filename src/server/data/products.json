@@ -46,5 +46,11 @@
 		"name": "Вино красное сухое",
 		"descriptions": "Красное сухое вино",
 		"price": 480
+	},
+	{
+		"image": "./src/assets/images/products/nabor1.png",
+		"name": "Набор для двоих",
+		"descriptions": "Первое + второе блюда",
+		"price": 1200
 	}
 ]

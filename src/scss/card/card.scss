@@ -15,52 +15,106 @@
 
 	// padding: 0 20px;
 }
-img {
-	border-radius: 20px;
-}
+
 .card {
-	padding-top: 120px;
+	margin-top: 100px;
 }
 .card__inner {
 }
-.container {
-}
+
 .card__content {
+}
+.card__content-up {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+.card__content-image {
+	width: 540px;
+	border-radius: 30px;
+}
+.card__content-about {
+}
+.card__content-about-name {
+}
+.card__content-rating {
+	margin-top: 20px;
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+.card__content-rating-mark {
+	font-size: 28px;
+	font-weight: 700;
+}
+.card__content-description {
+	color: rgba(227, 227, 227, 0.6);
+	font-size: 24px;
+	font-weight: 400;
+	max-width: 480px;
+	margin-top: 20px;
+}
+.card__content-prices {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.card__content-prices-new {
+	font-size: 28px;
+	font-weight: 700;
+}
+.card__content-prices-old {
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	color: #464646;
+	text-decoration: line-through;
+}
+.card__content-prices-sale {
+	color: #8b1414;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 4px;
+	background-color: #b86767;
+	border-radius: 20px;
+}
+
+.card__content-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: $secondary-color;
+	color: $primary-color;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s;
+	align-items: center;
+	display: flex;
+	margin-top: 20px;
+}
+
+.card__content-rewiew-image {
+	width: 170px;
+}
+
+.card__content-rewiew {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-.card__content-description {
+.card__content-rewiew-card {
 }
-.card__content-description-name {
-	@include title-mixin(34px);
+.card__content-rewiew-card-upper {
 }
-.card__content-description-rating {
-	display: flex;
-	align-items: center;
-	gap: 35px;
+.card__content-rewiew-name {
 }
-.card__content-description-rating-mark {
-	@include text-body(28px, 700);
+.card__content-rewiew-card-upper-rating {
 }
-.card__content-description-prices {
+.card__content-rewiew-image {
 }
-.card__content-description-prices-about {
-	@include text-body(24px, 500);
-	color: $card-description-color;
+.card__content-rewiew-mark {
 }
-.card__content-description-prices-price {
-	@include text-body(28px, 700);
-}
-.card__content-description-prices-old {
-	@include text-body(16px, 700);
-	color: #8b1414;
-	padding: 5px;
-	background-color: #b86767;
-	border-radius: 20px;
-	text-align: center;
-}
-.card__content-description-prices-sale {
-	@include text-body(28px, 700);
-}
-.card__content-description-button {
+.card__content-rewiew-about {
 }

@@ -2,38 +2,39 @@
 	padding: 14px 20px;
 }
 .about {
-	margin-top: 100px;
+	margin-top: 40px;
 	color: $primary-color;
 }
-.second-title {
+.about-title {
 	font-size: 35px;
 }
-.second__content {
+.about__content {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
 }
 
-.second__content-pluses-plus {
+.about__content-pluses-plus {
 	max-width: 336px;
 	font-size: 18px;
 	padding: 20px;
 	background-color: $button-bg;
 	border-radius: 20px;
+	margin-top: 20px;
 }
 
 @media (max-width: $mobile-l) {
-	.second__content {
+	.about__content {
 		grid-template-columns: 1fr;
 	}
-	.second__content-pluses-plus {
+	.about__content-pluses-plus {
 		max-width: 724px;
 		// font-size: 14px;
 	}
 }
 
 @media (max-width: $mobile-l) {
-	.second__content-pluses-plus {
+	.about__content-pluses-plus {
 		font-size: 14px;
 	}
 }
