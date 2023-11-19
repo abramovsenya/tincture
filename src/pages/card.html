@@ -71,31 +71,6 @@
 				</nav>
 			</div>
 		</header>
-		<!-- <section class="card">
-			<div class="card__inner container">
-				<div class="card__content">
-					<img src="../assets/images/imageCard.jpg" alt="product" />
-					<div class="card__content-description">
-						<p class="card__content-description-name">Клубника, 150гр</p>
-						<div class="card__content-description-rating">
-							<img src="../assets/icons/stars.svg" alt="stars" />
-							<p class="card__content-description-rating-mark">4/5</p>
-						</div>
-						<div class="card__content-description-prices">
-							<p class="card__content-description-prices-about">
-								В нашем кафе мы используем только свежую и качественную клубнику
-								чтобы наши гости могли насладиться ее неповторимым вкусом и
-								ароматом.
-							</p>
-							<p class="card__content-description-prices-price">96$</p>
-							<p class="card__content-description-prices-old">120$</p>
-							<p class="card__content-description-prices-sale">20%</p>
-						</div>
-						<a class="card__content-description-button" href="#">в заказ</a>
-					</div>
-				</div>
-			</div>
-		</section> -->
 		<section class="card">
 			<div class="card__inner container">
 				<div class="card__content">
@@ -108,7 +83,11 @@
 						<div class="card__content-about">
 							<h2 class="card__content-about-name">Клубника, 150гр</h2>
 							<div class="card__content-rating">
-								<img src="../assets/icons/stars.svg" alt="stars" />
+								<img
+									class="card__content-icon"
+									src="../assets/icons/stars.svg"
+									alt="stars"
+								/>
 								<p class="card__content-rating-mark">4/5</p>
 							</div>
 							<p class="card__content-description">
@@ -122,36 +101,108 @@
 								<p class="card__content-prices-sale">-20%</p>
 							</div>
 							<button class="card__content-button">
-								<img src="../assets/icons/shopping-basket.svg" alt="" />Добавить
-								в заказ
+								<img
+									class="card__content-button-icon"
+									src="../assets/icons/shopping-basket.svg"
+									alt="icon"
+								/>В заказ
 							</button>
 						</div>
 					</div>
-					<ReviewCard></ReviewCard>
-
-					<!-- <p class="card__content-rewiew">Отзывы</p>
-					<div class="card__content-rewiew-card">
-						<div class="card__content-rewiew-card-upper">
-							<p class="card__content-rewiew-name">Андреев Павел</p>
-							<div class="card__content-rewiew-card-upper-rating">
-								<img
-									class="card__content-rewiew-image"
-									src="../assets/icons/stars.svg"
-									alt="stars"
-								/>
-								<p class="card__content-rewiew-mark">4/5</p>
+					<p class="card__content-description-on">
+						В нашем кафе мы используем только свежую и качественную клубнику
+						чтобы наши гости могли насладиться ее неповторимым вкусом и
+						ароматом.
+					</p>
+					<p class="card__content-rewiew">Отзывы</p>
+					<div class="card__content-rewiew-cards">
+						<div class="card__content-rewiew-card">
+							<div class="card__content-rewiew-card-upper">
+								<p class="card__content-rewiew-name">Андреев Павел</p>
+								<div class="card__content-rewiew-card-upper-rating">
+									<img
+										class="card__content-rewiew-image"
+										src="../assets/icons/stars.svg"
+										alt="stars"
+									/>
+									<p class="card__content-rewiew-mark">4/5</p>
+								</div>
 							</div>
+							<p class="card__content-rewiew-about">
+								Лучшая клубника которую я ел . в жизни, всем советую!! Прекрасно
+								подошла к вину вместе с хумусом.
+							</p>
 						</div>
-						<p class="card__content-rewiew-about">
-							Лучшая клубника которую я ел . в жизни, всем советую!! Прекрасно
-							подошла к вину вместе с хумусом.
-						</p>
-					</div> -->
+						<div class="card__content-rewiew-card">
+							<div class="card__content-rewiew-card-upper">
+								<p class="card__content-rewiew-name">Наталья Петрова</p>
+								<div class="card__content-rewiew-card-upper-rating">
+									<img
+										class="card__content-rewiew-image"
+										src="../assets/icons/stars.svg"
+										alt="stars"
+									/>
+									<p class="card__content-rewiew-mark">4/5</p>
+								</div>
+							</div>
+							<p class="card__content-rewiew-about">
+								Клубника действительно хороша, так же понравилась ребёнку, он
+								был в полном восторге .
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<script src="/src/js/components/reviewCard.js"></script>
-
+		<footer class="footer">
+			<div class="footer__inner container">
+				<div class="footer__content">
+					<div class="footer__content-news">
+						<img
+							class="footer__image"
+							src="/src/assets/icons/footerLogo.svg"
+							alt="logo"
+						/>
+						<div class="footer__content-under">
+							<p class="footer__content-title">
+								Подписка на эксклюзивные новости
+							</p>
+							<input
+								class="footer__content-input"
+								placeholder="Ваша почта"
+								type="text"
+							/>
+							<a class="footer__content-button" href="">Подписаться</a>
+						</div>
+					</div>
+					<div class="footer__content-social">
+						<p class="footer__content-social-text">Наши социальные сети</p>
+						<div class="icons">
+							<a href="#">
+								<img
+									class="header__menu-button-b"
+									src="../assets/icons/tg.svg"
+									alt="icon"
+								/>
+							</a>
+							<a href="#"
+								><img
+									class="header__menu-button-b"
+									src="../assets/icons/vk.svg"
+									alt="icon"
+							/></a>
+							<a href="#"
+								><img
+									class="header__menu-button-b"
+									src="../assets/icons/whatsup.svg"
+									alt="icon"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script type="module" src="/src/js/main.js"></script>
+		<script type="module" src="/src/js/burger.js"></script>
 	</body>
 </html>

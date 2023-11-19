@@ -17,7 +17,7 @@
 }
 
 .card {
-	margin-top: 100px;
+	margin-top: 120px;
 }
 .card__inner {
 }
@@ -102,7 +102,15 @@
 
 .card__content-rewiew {
 	display: grid;
+	// grid-template-columns: 1fr 1fr;
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: 20px;
+}
+.card__content-rewiew-cards {
+	display: grid;
 	grid-template-columns: 1fr 1fr;
+	margin-top: 20px;
 }
 .card__content-rewiew-card {
 	padding: 20px;
@@ -131,4 +139,124 @@
 	font-size: 23px;
 	font-weight: 300;
 	max-width: 504px;
+}
+.card__content-description-on {
+	display: none;
+}
+
+@media (max-width: $laptop) {
+	.card__content-image {
+		max-width: 424px;
+	}
+	.card__content-rewiew-image {
+		max-width: 179px;
+	}
+	.card__content-description {
+		font-size: 18px;
+	}
+	.card__content-rewiew-image {
+		max-width: 120px;
+	}
+	.card__content-rewiew-name {
+		font-size: 18px;
+	}
+	.card__content-rewiew-mark {
+		font-size: 18px;
+	}
+	.card__content-rewiew-about {
+		font-size: 18px;
+	}
+	.card__content-rewiew-card {
+		max-width: 440px;
+	}
+	.card__content-icon {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: $tablet) {
+	.card__content-image {
+		max-width: 300px;
+	}
+	.card__content-rewiew-cards {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	.card__content-rewiew-card {
+		max-width: 768px;
+		width: 100%;
+	}
+	.card__content-rewiew-about {
+		max-width: 768px;
+	}
+	.card__content-icon {
+		max-width: 100px;
+	}
+	.card__content-description {
+		// font-size: 16px;
+		display: none;
+	}
+	.card__content-description-on {
+		font-size: 18px;
+		// display: none;
+		display: flex;
+		padding-top: 20px;
+	}
+	.card__content-about-name,
+	.card__content-rating-mark,
+	.card__content-prices-old,
+	.card__content-prices-new {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: $mobile-l) {
+	.card__content-image {
+		max-width: 160px;
+	}
+	.card__content-about-name,
+	.card__content-rating-mark,
+	.card__content-prices-old,
+	.card__content-prices-new {
+		font-size: 18px;
+		margin-top: 5px;
+	}
+	.card__content-button-icon {
+		display: none;
+	}
+	.card__content-rating,
+	.card__content-prices {
+		gap: 0;
+		justify-content: space-between;
+	}
+	.card__content-button {
+		font-size: 14px;
+	}
+	.card__content-rewiew {
+		font-size: 18px;
+	}
+	.card__content-prices-sale {
+		font-size: 14px;
+	}
+	.card__content-rating,
+	.card__content-prices {
+		margin-top: 5px;
+	}
+}
+@media (max-width: $mobile-s) {
+	.card__content-about-name,
+	.card__content-rating-mark,
+	.card__content-prices-old,
+	.card__content-prices-new {
+		font-size: 14px;
+	}
+	.card__content-icon {
+		max-width: 90px;
+	}
+	.card__content-description-on {
+		font-size: 16px;
+	}
+	.card__content-button {
+		padding: 4px 12px;
+	}
 }
