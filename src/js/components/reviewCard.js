@@ -1,3 +1,4 @@
+const reviewsSection = document.querySelector('.card');
 class ReviewCard {
 	constructor(name, rating, about) {
 		this.name = name;
@@ -50,4 +51,6 @@ const review = new ReviewCard(
 	'Лучшая клубника которую я ел . в жизни, всем советую!! Прекрасно подошла к вину вместе с хумусом.'
 );
 const reviewCard = review.generateCard();
-document.body.appendChild(reviewCard);
+// document.body.appendChild(reviewCard);
+
+reviewsSection.appendChild(reviewCard);

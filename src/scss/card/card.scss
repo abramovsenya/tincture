@@ -105,16 +105,30 @@
 	grid-template-columns: 1fr 1fr;
 }
 .card__content-rewiew-card {
+	padding: 20px;
+	background-color: #4f4f4f;
+	border-radius: 20px;
+	max-width: 520px;
 }
 .card__content-rewiew-card-upper {
+	display: flex;
+	justify-content: space-between;
 }
 .card__content-rewiew-name {
+	font-size: 26px;
+	font-weight: 700;
 }
 .card__content-rewiew-card-upper-rating {
+	font-weight: 700;
+	font-size: 26px;
+	display: flex;
 }
 .card__content-rewiew-image {
 }
 .card__content-rewiew-mark {
 }
 .card__content-rewiew-about {
+	font-size: 23px;
+	font-weight: 300;
+	max-width: 504px;
 }
