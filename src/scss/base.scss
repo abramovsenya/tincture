@@ -17,8 +17,8 @@
 }
 /* Ширина скроллбара */
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 50px;
+	width: 5px;
+	height: 3px;
 }
 
 /* Дорожка скроллбара */
@@ -34,5 +34,5 @@
 
 /* Указатель наведения на скроллбар */
 ::-webkit-scrollbar-thumb:hover {
-	background: #ff8c00;
+	background: #ff7f50;
 }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Товар</title>
+	</head>
+	<body class="page">
+		<header class="header">
+			<div class="container">
+				<nav class="header__nav">
+					<a class="header__logo" href="#"
+						><img src="../assets/icons/headerlogo.svg" alt="logo"
+					/></a>
+					<ul class="header__menu">
+						<li class="header__menu-button header__menu-link_orange">
+							<a class="header__menu-link" href="#">+7 (915)-386-56-28</a>
+						</li>
+						<li class="header__menu-button">
+							<a href="#"
+								><img src="../assets/icons/whatsup.svg" alt="icon"
+							/></a>
+						</li>
+						<li class="header__menu-button">
+							<a href="#"><img src="../assets/icons/tg.svg" alt="icon" /></a>
+						</li>
+						<li class="header__menu-button">
+							<a href="#"><img src="../assets/icons/vk.svg" alt="icon" /></a>
+						</li>
+					</ul>
+					<ul class="header__menu header__menu-navigation">
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Праздники и события</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Подарочный сертификат</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Партнёрам</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Путеводитель</a>
+						</li>
+					</ul>
+					<div class="header__burger">
+						<span class="header__burger-bar"></span>
+						<span class="header__burger-bar"></span>
+						<span class="header__burger-bar"></span>
+					</div>
+					<div class="header__nav-mobile">
+						<ul class="header__menu-mobile">
+							<li class="header__menu-mobile-item">
+								<a class="header__menu-mobile-link" href="#"
+									>Праздники и события</a
+								>
+							</li>
+							<li class="header__menu-mobile-item">
+								<a class="header__menu-mobile-link" href="#"
+									>Подарочный сертификат</a
+								>
+							</li>
+							<li class="header__menu-mobile-item">
+								<a class="header__menu-mobile-link" href="#">Партнёрам</a>
+							</li>
+							<li class="header__menu-mobile-item">
+								<a class="header__menu-mobile-link" href="#">Путеводитель</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<section class="basket">
+			<div class="basket__inner container">
+				<div class="basket__content">
+					<h2 class="basket__content-title">Корзина</h2>
+					<a href="../../index.html" class="basket__content-source"
+						>Главная / Корзина</a
+					>
+					<div class="basket__content-cards">
+						<div class="basket__content-card">
+							<img
+								src="../assets/images/products/cruassan.jpg"
+								alt="product"
+								class="basket__content-card-image"
+							/>
+							<div class="basket__content-card-about">
+								<p class="basket__content-card-about-name">Круассаны, 70гр</p>
+								<p class="basket__content-card-about-cost">150 ₽/шт</p>
+							</div>
+							<div class="basket__content-card-pieces">
+								<button class="basket__content-card-pieces-minus">-</button>
+								<p class="basket__content-card-pieces-pieces">2 шт</p>
+								<button class="basket__content-card-pieces-plus">+</button>
+							</div>
+							<p class="basket__content-card-x">300₽</p>
+						</div>
+					</div>
+					<div class="basket__content-promo">
+						<p class="basket__content-promo-text">Есть промокод?</p>
+						<form action="#">
+							<input
+								class="basket__content-promo-bar"
+								type="text"
+								placeholder="Ваш промокод..."
+								name="q"
+							/>
+							<button class="basket__content-promo-button">Применить</button>
+						</form>
+					</div>
+					<div class="basket__content-final">
+						<p class="basket__content-final-price">Итого к оплате: 420 ₽</p>
+						<a href="#" class="basket__content-final-button"
+							>Перейти к оформлению</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__inner container">
+				<div class="footer__content">
+					<div class="footer__content-news">
+						<img
+							class="footer__image"
+							src="/src/assets/icons/footerLogo.svg"
+							alt="logo"
+						/>
+						<div class="footer__content-under">
+							<p class="footer__content-title">
+								Подписка на эксклюзивные новости
+							</p>
+							<input
+								class="footer__content-input"
+								placeholder="Ваша почта"
+								type="text"
+							/>
+							<a class="footer__content-button" href="#">Подписаться</a>
+						</div>
+					</div>
+					<div class="footer__content-social">
+						<p class="footer__content-social-text">Наши социальные сети</p>
+						<div class="icons">
+							<a href="#">
+								<img
+									class="header__menu-button-b"
+									src="../assets/icons/tg.svg"
+									alt="icon"
+								/>
+							</a>
+							<a href="#"
+								><img
+									class="header__menu-button-b"
+									src="../assets/icons/vk.svg"
+									alt="icon"
+							/></a>
+							<a href="#"
+								><img
+									class="header__menu-button-b"
+									src="../assets/icons/whatsup.svg"
+									alt="icon"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="module" src="/src/js/main.js"></script>
+		<script type="module" src="/src/js/burger.js"></script>
+	</body>
+</html>
